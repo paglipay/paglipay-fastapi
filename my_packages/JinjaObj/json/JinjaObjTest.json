@@ -1,0 +1,18 @@
+[
+    {
+        "import": "JinjaObj"
+    },
+    {
+        "True": [
+            {
+                "list": "my_packages/JinjaObj/list.json"
+            },
+            {
+                "open": "./json/cisco_actions/templates/3850_edge_9300_upgrade/aaa.j2"
+            },
+            {
+                "save_as": "./json/cisco_actions/templates/3850_edge_9300_upgrade/aaa.yml"
+            }
+        ]
+    }
+]

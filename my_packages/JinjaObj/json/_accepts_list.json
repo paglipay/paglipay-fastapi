@@ -1,0 +1,9 @@
+[
+    {"import":"PuttyObj"},
+    {% for result in results %}
+    {"False": [
+      {"True":"ssh {{ result }}"}
+    ]},
+    {% endfor %}
+  ]
+  

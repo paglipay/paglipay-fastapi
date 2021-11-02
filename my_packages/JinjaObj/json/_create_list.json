@@ -1,0 +1,14 @@
+[
+    {"import":"JinjaObj"},
+    {"True": [
+       {"list_dics":"my_packages/JinjaObj/json/ip.txt"},
+       {"open":"my_packages/JinjaObj/json/_accepts_list.json"},
+       {"save_as":"my_packages/JinjaObj/json/out.json"}
+    ]},
+    {"True": [
+       {"list_dics":"my_packages/JinjaObj/json/ip.txt"},
+       {"open":"my_packages/JinjaObj/json/_accepts_list.json"},
+       {"save_as":"my_packages/JinjaObj/json/out.yml"}
+    ]}
+]
+  

@@ -1,0 +1,17 @@
+[
+    {
+        "import": "JinjaObj"
+    },
+    {
+        "dics": {
+            "key_7": "test",
+            "template_file": "TEST"
+        }
+    },
+    {
+        "open": "./json/cisco_actions/templates/3850_edge_9300_upgrade/aaa.j2"
+    },
+    {
+        "save_as": "./json/cisco_actions/templates/3850_edge_9300_upgrade/aaa.txt"
+    }
+]

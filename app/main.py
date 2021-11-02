@@ -3,6 +3,10 @@ from fastapi.middleware.cors import CORSMiddleware
 import random
 # models.Base.metadata.create_all(bind=engine)
 
+flask_process_data = {}
+flask_process = {}
+import_obj_instance_hash = {}
+
 app = FastAPI()
 
 origins = ["*"]
@@ -23,5 +27,10 @@ app.add_middleware(
 
 @app.get("/")
 def root():
-    lucky_num = random.randint(1,1000)
+    lucky_num = random.randint(1, 1000)
     return {"message": f"Hello World pushing out to ubuntu. Your lucky number for today is {lucky_num}"}
+
+
+@app.get('/start/{hash}')
+def start(hash):
+    return {"message": f"HI {hash}"}
