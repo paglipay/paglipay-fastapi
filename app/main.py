@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-
+import random
 # models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
@@ -23,4 +23,5 @@ app.add_middleware(
 
 @app.get("/")
 def root():
-    return {"message": "Hello World pushing out to ubuntu"}
+    lucky_num = random.randint(1,1000)
+    return {"message": f"Hello World pushing out to ubuntu. Your lucky number for today is {lucky_num}"}
