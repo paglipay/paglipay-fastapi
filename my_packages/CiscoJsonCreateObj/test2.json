@@ -1,0 +1,24 @@
+[
+    {
+        "import": "CiscoJsonCreateObj"
+    },
+    {
+        "True": [
+            {
+                "open": "C:/Users/Paul Aglipay/Desktop/New Folder/br00f2n.luskin.ucla.net.txt"
+            },
+            {
+                "break_it_up": {
+                }
+            },
+            {
+                "get": [
+                    "hostname"
+                ]
+            },
+            {
+                "save_as": "C:/Users/Paul Aglipay/Desktop/dev_json/br00f2n.luskin.ucla.net.json"
+            }
+        ]
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+      "import": "JinjaObj"
+    },
+    {
+      "True": [
+        {
+          "list_dics": "json/excel/excel_dev_list.txt"
+        },
+        {
+          "open": "CustomObj/CiscoObj/txt_to_json_accept_list.json"
+        },
+        {
+          "save_as": "CustomObj/CiscoObj/excel_dev_list.json"
+        }
+      ]
+    },
+    {
+      "False": [
+        {
+          "list_dics": "CustomObj/CiscoObj/excel_dev_list.json"
+        },
+        {
+          "open": "CustomObj/CiscoObj/_accept_list.json"
+        },
+        {
+          "save_as": "CustomObj/CiscoObj/cisco_json_test_dev_list.json"
+        }
+      ]
+    },
+    {
+      "True": "\r\n"
+    }
+  ]

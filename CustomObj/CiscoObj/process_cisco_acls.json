@@ -1,0 +1,14 @@
+[
+    {
+        "import": "ExtendedAccessListObj"
+    },
+    {
+        "True": "ExtendedAccessListObj"
+    },
+    {
+        "open": {
+            "src_net": "149.142.0.0/16",
+            "dest_net": "149.142.33.0/24"
+        }
+    }
+]

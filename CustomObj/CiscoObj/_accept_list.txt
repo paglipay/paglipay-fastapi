@@ -1,0 +1,90 @@
+[
+  {
+    "import": "CiscoJsonCreateObj"
+  },
+  {% for result in results %}
+  {
+    "True": [
+      {
+        "open": "C:/Users/Paul Aglipay/Desktop/New folder/{{ result }}.txt"
+      },
+      {
+        "break_it_up": {
+          "interface": [
+            "interface",
+            "description",
+            "ip address",
+            "ip access-group",
+            "standby",
+            "switchport access vlan",
+            "switchport voice vlan",
+            "switchport",
+            "ip ospf",
+            "ipv6 address",
+            "ipv6 ospf",
+            "ipv6 traffic-filter",
+            "cdp",
+            "lldp",
+            "ip helper-address",
+            "shutdown",
+            "port-security",
+            "spanning-tree",
+            "dhcp snooping",
+            "arp inspection",
+            "vrf forwarding",
+            "service-policy"
+          ],
+          "aaa group server radius": [
+              "aaa group server radius",
+              "ip radius source-interface"
+          ],
+          "aaa": [
+              "aaa"
+          ],
+          "call-home": [
+              "profile"
+          ],
+          "ip http client source-interface": [
+              "ip http client source-interface"
+          ],
+          "ip host": [
+              "ip host"
+          ],
+          "vlan": [
+            "vlan",
+            "name"
+          ],
+          "ip access-list extended": [
+            "remark",
+            "permit",
+            "deny"
+          ]
+        }
+      },
+      {
+        "get": [
+          "!",
+          "!RANCID-CONTENT-TYPE",
+          "!Chassis type",
+          "aaa group server radius",
+          "aaa",
+          "crypto",
+          "hostname",
+          "interface",
+          "vlan",
+          "switch",
+          "!Software image version",
+          "!Model",
+          "call-home",
+          "ip http client source-interface",
+          "ip host"
+        ]
+      },
+      {
+        "save_as": "C:/Users/Paul Aglipay/Desktop/dev_json/{{ result }}.json"
+      }
+    ]
+  },
+  {% endfor %}
+
+]

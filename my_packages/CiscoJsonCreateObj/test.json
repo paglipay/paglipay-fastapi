@@ -1,0 +1,139 @@
+[
+    {
+        "import": "CiscoJsonCreateObj"
+    },
+    {
+        "True": [
+            {
+                "open": "C:/Users/Paul Aglipay/Desktop/New Folder/br00f2n.luskin.ucla.net.txt"
+            },
+            {
+                "break_it_up": {
+                    "interface": [
+                        "interface",
+                        "description",
+                        "ip address",
+                        "ip access-group",
+                        "standby",
+                        "switchport access vlan",
+                        "switchport voice vlan",
+                        "switchport",
+                        "ip ospf",
+                        "ipv6 address",
+                        "ipv6 ospf",
+                        "ipv6 traffic-filter",
+                        "cdp",
+                        "lldp",
+                        "ip helper-address",
+                        "shutdown",
+                        "port-security",
+                        "spanning-tree",
+                        "dhcp snooping",
+                        "arp inspection",
+                        "vrf forwarding",
+                        "service-policy"
+                    ],
+                    "class-map": [
+                        "match access-group name"
+                    ],
+                    "crypto": [
+                        "match address"
+                    ],
+                    "route-map": [
+                        "match ip address"
+                    ],
+                    "vlan": [
+                        "vlan",
+                        "name"
+                    ],
+                    "router ospf": [
+                        "router-id",
+                        "network"
+                    ],
+                    "router bgp": [
+                        "bgp router-id",
+                        "neighbor"
+                    ],
+                    "ip access-list extended": [
+                        "remark",
+                        "permit",
+                        "deny"
+                    ]
+                }
+            },
+            {
+                "get": [
+                    "!",
+                    "!RANCID-CONTENT-TYPE",
+                    "!Chassis type",
+                    "!Processor ID",
+                    "!Slot",
+                    "!Serial Number",
+                    "!SN",
+                    "aaa",
+                    "access-list",
+                    "crypto",
+                    "route-map",
+                    "enable secret",
+                    "hostname",
+                    "interface",
+                    "ip arp",
+                    "ip access-list extended",
+                    "ip default-gateway",
+                    "ip arp inspection vlan",
+                    "ip dhcp snooping vlan",
+                    "ip domain-name",
+                    "ip name-server",
+                    "ip pim",
+                    "ip prefix-list",
+                    "ip route",
+                    "ip ssh",
+                    "ip ssh pubkey",
+                    "ip vrf",
+                    "ipv6",
+                    "ipv6 access-list",
+                    "ipv6 prefix-list",
+                    "ipv6 router",
+                    "line con",
+                    "line vty",
+                    "lldp run",
+                    "logging",
+                    "no ip http",
+                    "vstack",
+                    "no vstack",
+                    "ntp",
+                    "object network",
+                    "router",
+                    "router bgp",
+                    "router ospf",
+                    "snmp-server",
+                    "snmp-server community",
+                    "snmp-server contact",
+                    "snmp-server enable traps",
+                    "snmp-server host",
+                    "snmp-server location",
+                    "spanning-tree",
+                    "tacacs-server",
+                    "track",
+                    "username",
+                    "vlan",
+                    "vrf",
+                    "vtp",
+                    "switch",
+                    "ip ospf",
+                    "ip ospf name-lookup",
+                    "!Software image version",
+                    "!Model",
+                    "no ip forward-protocol",
+                    "snmp-server enable traps power-",
+                    "class-map",
+                    "policy-map",
+                    "time-range"
+                ]
+            },
+            {
+                "save_as": "C:/Users/Paul Aglipay/Desktop/dev_json/br00f2n.luskin.ucla.net.json"
+            }
+        ]
+    }
+]

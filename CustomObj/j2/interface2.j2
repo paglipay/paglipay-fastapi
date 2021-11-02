@@ -1,0 +1,21 @@
+{{ interface }}
+{%- if description|length %}
+{{ description }}
+{%- endif %}
+{{ switchport_access_vlan }}
+ switchport mode access
+{%- if switchport_voice_vlan|length %}
+{{ switchport_voice_vlan }}
+{%- endif %}
+ switchport port-security maximum 12
+ switchport port-security aging time 5
+ switchport port-security aging type inactivity
+ switchport port-security
+ trust device cisco-phone
+ no lldp transmit
+ no lldp receive
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+ spanning-tree guard root
+ service-policy input QOS_POLICY_PER_PORT
+ service-policy output QOS_POLICY_OUTPUT
