@@ -1,0 +1,19 @@
+[
+  {
+    "import": "PuttyObj"
+  },
+  {
+    "False": [
+      {
+        "True": "ssh R1"
+      }
+    ]
+  },
+  {
+    "False": [
+      {
+        "True": "ssh R2"
+      }
+    ]
+  }
+]
