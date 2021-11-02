@@ -35,6 +35,9 @@ def root():
     lucky_num = random.randint(1, 1000)
     return {"message": f"Hello World pushing out to ubuntu. Your lucky number for today is {lucky_num}"}
 
+@app.get('/show/{hash}')
+def show(hash):
+    return flask_process_data[hash]
 
 @app.post('/start/{hash}')
 def start(hash, data: dict = Body(...)):
@@ -42,9 +45,9 @@ def start(hash, data: dict = Body(...)):
     name = hash
     # data = request.get_json()
     print('data: ', data)
-    # if 'jobs' in data:
-    #     name = data.pop('jobs')
-    # d = data
+    if 'jobs' in data:
+        name = data.pop('jobs')
+    d = data
     if hash in flask_process_data:
         flask_process_data[hash].update(d)
         import_obj_instance = import_obj_instance_hash[hash]
@@ -57,14 +60,14 @@ def start(hash, data: dict = Body(...)):
     
     d = flask_process_data[hash]
 
-    name = 'my_packages/JinjaObj/json/_create_list.json'
+    # name = 'start.json'
 
     thread = threading.Thread(target=do_process, args=(d, name, import_obj_instance,))
     flask_process[hash] = thread
     thread.daemon = False
     thread.start()
     thread.join()
-    return {"message": f"HI {hash}", "flask_process_data": flask_process_data[hash]}
+    return {"message": f"HI {hash}", "data": flask_process_data[hash]}
 
 def do_process(flask_data, json_file, import_obj_instance):
     if '.json' in json_file:
