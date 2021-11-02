@@ -1,0 +1,16 @@
+[
+    {
+        "wait": 10
+    },
+    "",
+    {
+        "not'$": [
+            {
+                "True": "json/paramiko/wait_till.json"
+            }
+        ]
+    },
+    {
+        "wait": 0
+    }
+]
