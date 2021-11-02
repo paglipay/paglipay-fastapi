@@ -231,17 +231,18 @@ class JinjaObj:
                 self_json_config = self.json_config
                 if len(self.json_config) == 1 and len(self.json_config[0]) > 0:
                     self_json_config = self.json_config[0]
-                    
-                directory = '/'.join(v_val.split('/')[:-1])
-                # print('directory:')
-                # print(directory)
-                if not os.path.exists(directory):
-                    os.makedirs(directory)
 
-                out_file = open(v_val, 'w')
+                if '.net.yml' in v_val or 'out.yml' in v_val:    
+                    directory = '/'.join(v_val.split('/')[:-1])
+                    # print('directory:')
+                    # print(directory)
+                    if not os.path.exists(directory):
+                        os.makedirs(directory)
 
-                yaml.dump(self_json_config, out_file, indent=2)
-                out_file.close()
+                    out_file = open(v_val, 'w')
+
+                    yaml.dump(self_json_config, out_file, indent=2)
+                    out_file.close()
 
                 self.data[v_val] = self_json_config
                 if 'output' in self.data:
