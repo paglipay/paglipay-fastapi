@@ -1,0 +1,15 @@
+[
+ {"import":"ParamikoObj"},
+ {"True":"./json/paramiko/ubuntu/open/do.json"},
+ {"True":"pwd"},
+  {"wait":3},
+  [  {% for result in results %}
+    {
+        "True": [{
+            "True": "{{ result['send_cmd'][0] }}",
+        },
+        ]
+    },
+  {% endfor %}
+]
+]

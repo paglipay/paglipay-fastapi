@@ -1,0 +1,66 @@
+{
+    "my_packages/RequestsObj/RequestsObjTest.json":[
+        {
+            "import": "Key"
+        },
+        {
+            "True": [
+                {
+                    "import": "RequestsObj"
+                },
+                {
+                    "open": {
+                        "ip": "http://corp.paglipay.info:5003/start",
+                        "jobs": [
+                            {
+                                "import": "Key"
+                            },
+                            {
+                                "True": [
+                                    {
+                                        "import": "RequestsObj"
+                                    },
+                                    {
+                                        "open": {
+                                            "ip": "http://192.168.2.213:5000/start",
+                                            "jobs": [
+                                                {
+                                                    "import": "Key"
+                                                },
+                                                {
+                                                    "True": [
+                                                        {
+                                                            "import": "FileObj"
+                                                        },
+                                                        {
+                                                            "open": "C:/Users/Paul Aglipay/Desktop/New folder/br00f2n.luskin.ucla.net.txt"
+                                                        },
+                                                        {
+                                                            "open": "C:/Users/Paul Aglipay/Desktop/New folder/br00f2s.luskin.ucla.net.txt"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "True": "end"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "True": "end"
+                }
+            ]
+        }
+    ],
+    "jobs": [
+        {"import":"Key"},
+        "my_packages/RequestsObj/RequestsObjTest.json",        
+		"CustomObj/CiscoObj/create_cisco_json_test.json",
+		"./CustomObj/CiscoObj/cisco_json_test_dev_list.json"
+    ]
+}

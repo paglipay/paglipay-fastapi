@@ -1,0 +1,18 @@
+[
+    {
+        "import": "JinjaObj"
+    },
+    {
+        "True": [
+            {
+                "list_dics": "./json/paramiko/ubuntu/open/form_dic.json"
+            },
+            {
+                "open": "./json/paramiko/ubuntu/send_cmd/_accepts_dic.txt"
+            },
+            {
+                "save_as": "./json/paramiko/ubuntu/send_cmd/do.json"
+            }
+        ]
+    }
+]

@@ -1,0 +1,10 @@
+[  {% for result in results %}
+  {
+        "open": {
+            "ip": "{{ result['ip'][0] }}",
+            "username": "{{ result['username'][0] }}",
+            "password": "{{ result['password'][0] }}"
+        }
+    },
+  {% endfor %}
+]

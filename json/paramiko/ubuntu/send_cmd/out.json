@@ -1,0 +1,23 @@
+[
+  {
+    "import": "ParamikoObj"
+  },
+  {
+    "True": "./json/paramiko/ubuntu/open/do.json"
+  },
+  {
+    "True": "pwd"
+  },
+  {
+    "wait": 3
+  },
+  [
+    {
+      "True": [
+        {
+          "True": "ls -la"
+        }
+      ]
+    }
+  ]
+]

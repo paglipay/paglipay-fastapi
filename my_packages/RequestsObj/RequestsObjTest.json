@@ -1,0 +1,54 @@
+[
+    {
+        "import": "Key"
+    },
+    {
+        "True": [
+            {
+                "import": "RequestsObj"
+            },
+            {
+                "open": {
+                    "ip": "http://192.168.2.213:5000/start",
+                    "jobs": [
+                        {
+                            "import": "Key"
+                        },
+                        {
+                            "True": [
+                                {
+                                    "import": "ParamikoObj"
+                                },
+                                {
+                                    "open": {
+                                        "ip": "192.168.2.81",
+                                        "username": "vagrant",
+                                        "password": "vagrant"
+                                    }
+                                },
+                                {
+                                    "True": "pwd"
+                                },
+                                {
+                                    "not':~$": "./json/paramiko/wait_till.json"
+                                },
+                                {
+                                    "True": "sudo docker service ls"
+                                },
+                                {
+                                    "not':~$": "./json/paramiko/wait_till.json"
+                                },
+                                {
+                                    "True": "exit"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "True": "end"
+            }
+        ]
+    }
+]
