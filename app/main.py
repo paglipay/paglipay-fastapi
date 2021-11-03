@@ -39,7 +39,6 @@ def root():
 
 @app.post('/ssh_check/{hash}')
 def ssh_check(hash, postData: PostSsh):
-    # flask_process_data[hash] = data
     d = {}
     name = hash
     data = {
@@ -70,7 +69,7 @@ def ssh_check(hash, postData: PostSsh):
                     },
                     {
                         "open": {
-                            "ip": "http://192.168.2.213:5000/start",
+                            "ip": "http://corp.paglipay.info:5003/start",
                             "extra_pass": [
                                 "./json/paramiko/ubuntu/open/form_dic.json"
                             ],
@@ -175,3 +174,6 @@ def do_process(flask_data, json_file, import_obj_instance):
     else:
         c = DTree.DTree(json_file, name=uuid.uuid1(),
                         import_obj_instance=import_obj_instance, data=flask_data)
+
+def thread_process(data):
+    pass
