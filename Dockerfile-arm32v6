@@ -1,4 +1,4 @@
-FROM arm64v6/python:alpine
+FROM arm32v6/python:alpine
 
 RUN apk add --update docker openrc screen
 
