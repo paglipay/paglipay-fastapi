@@ -1,3 +1,4 @@
+uvicorn app.main:app --host 0.0.0.0 --port 5000
 {
     "my_packages/JinjaObj/json/ip.txt":"R1\nR2\nR123\nSQWE",
     "jobs": [
