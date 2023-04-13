@@ -1,0 +1,27 @@
+[
+  {
+    "import": "PySerialObj"
+  },
+  {
+    "False": [
+      {
+        "open": "COM3"
+      }
+    ]
+  },
+  {
+    "True": [
+      {
+        "input": "COM:"
+      },
+      {
+        "open": {
+          "my_vars": "COM:"
+        }
+      }
+    ]
+  },
+  {
+    "True": "\r\n"
+  }
+]

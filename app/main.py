@@ -7,6 +7,8 @@ import json
 import uuid
 import threading
 from .schemas import PostSsh
+import socket
+from flask import jsonify
 # models.Base.metadata.create_all(bind=engine)
 
 flask_process_data = {}
@@ -30,11 +32,15 @@ app.add_middleware(
 # app.include_router(auth.router)
 # app.include_router(vote.router)
 
+@app.get("/process_data")
+def process_data():
+    return jsonify(flask_process_data), 200
 
 @app.get("/")
 def root():
-    lucky_num = random.randint(1, 1000)
-    return {"message": f"Hello World pushing out to ubuntu. Your lucky number for today is {lucky_num}"}
+    # lucky_num = random.randint(1, 1000)
+    # return {"message": f"Hello World pushing out to ubuntu. Your lucky number for today is {lucky_num}"}
+    return 'Hello World! From ' + socket.gethostname()
 
 
 @app.post('/ssh_check/{hash}')
