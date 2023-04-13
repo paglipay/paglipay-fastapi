@@ -8,7 +8,6 @@ import uuid
 import threading
 from .schemas import PostSsh
 import socket
-from flask import jsonify
 # models.Base.metadata.create_all(bind=engine)
 
 flask_process_data = {}
@@ -34,7 +33,7 @@ app.add_middleware(
 
 @app.get("/process_data")
 def process_data():
-    return jsonify(flask_process_data), 200
+    return flask_process_data
 
 @app.get("/")
 def root():
