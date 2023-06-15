@@ -169,7 +169,12 @@ def start(hash, data: dict = Body(...)):
     thread.daemon = False
     thread.start()
     thread.join()
-    return {"message": f"HI {hash}", "data": flask_process_data[hash]}
+    
+    if not 'uuid' in hash:
+        d['uuid'] = hash
+    
+    # return {"message": f"HI {hash}", "data": flask_process_data[hash]}
+    return d
 
 
 def do_process(flask_data, json_file, import_obj_instance):
